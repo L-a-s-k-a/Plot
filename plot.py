@@ -26,7 +26,7 @@ try:
     # plt.grid(True)
     # plt.show()
     
-    ##Mean value is 2039.999
+    ##Mean ADC value at a reference voltage 1.484 is 2039.999
     
     # motor_adc_value = pd.read_csv('adc_value.csv')
     # if motor_adc_value.empty:
