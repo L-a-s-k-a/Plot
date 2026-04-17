@@ -13,10 +13,10 @@ try:
     y_col = df.columns[1]
     
     # Преобразуем столбцы x и y в числа, заменяя ошибки на NaN
-    x = pd.to_numeric(df.columns[0])
-    y = pd.to_numeric(df.columns[1])
+    x = df.apply(pd.to_numeric, errors='coerce')
+    # y = pd.to_numeric(df.columns[1])
     print(x.head())
-    print(y.head())
+    # print(y.head())
 
     # x_mean = x.mean()
     # print(x_mean)
